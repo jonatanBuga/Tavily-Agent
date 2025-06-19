@@ -18,6 +18,7 @@ def search_tavily(query: str, search_depth: str = "advanced", max_results: int =
         "max_results": max_results
     }
 
+
     response = requests.post(url, json=payload, headers=headers)
     response.raise_for_status()
 
