@@ -1,6 +1,16 @@
 
 
 def preprocess_node(state: dict)->dict:
+    """
+        Processes the top Tavily search results and builds a clean context string
+        for use by the LLM.
+
+        Args:
+            state (dict): The current state, including Tavily search results.
+
+        Returns:
+            dict: A dictionary containing the concatenated and formatted context string.
+    """
     search_contexts =state.get("tavily_results","") or []
     if not search_contexts:
         return {"context": "No relevant context found."}

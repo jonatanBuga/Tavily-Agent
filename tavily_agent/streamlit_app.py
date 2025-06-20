@@ -2,6 +2,15 @@ from agent import app
 import streamlit as st
 from typing import Dict
 
+
+"""
+    Runs the full RAG agent pipeline using LangGraph, and displays the final output 
+    including the question, LLM-generated answer, and retrieved sources.
+
+    Args:
+        question (str): The natural-language question from the user.
+"""
+
 st.set_page_config(page_title="Tavily RAG Agent", layout="centered")
 
 st.title("📚 Tavily-Powered RAG Agent")
