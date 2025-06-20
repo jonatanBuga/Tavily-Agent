@@ -18,6 +18,7 @@ Build an agent that:
 - OpenAI Chat API
 - Python 3.10+
 - `.env` file for keys
+- [Streamlit](https://streamlit.io) for interactive UI
 
 ## How to Run
 
@@ -28,7 +29,10 @@ Build an agent that:
     TAVILY_API_KEY=your_tavily_key
 3. Install requirements: 
     pip install -r requirements.txt
-4. Run: python3 demo.py 
+4. **Launch the app**  
+    ```bash
+    streamlit run streamlit_app.py
+    ```
 
 
 ##  Sample Queries
@@ -56,7 +60,7 @@ Quantum computing poses a threat to current encryption...
     tavily_rag_agent/
     │
     ├── agent.py
-    ├── demo.py 
+    ├── streamlit_app.py.py 
     ├── requirements.txt
     ├── nodes/
     │   ├── input_node.py 

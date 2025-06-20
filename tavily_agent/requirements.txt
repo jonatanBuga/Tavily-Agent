@@ -6,3 +6,4 @@ dotenv
 langchain-tavily
 requests
 langchain
+streamlit
