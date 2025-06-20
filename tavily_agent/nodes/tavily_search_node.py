@@ -1,6 +1,7 @@
 import os
 from utils.tavily_api import search_tavily
 
+
 def tavily_node(state: dict)->dict:
     """
         Sends the user's question to the Tavily API to retrieve relevant web content.
