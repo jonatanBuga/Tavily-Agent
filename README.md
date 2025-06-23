@@ -1,4 +1,4 @@
-#  RAG Agent using LangGraph, Tavily & OpenAIAdd commentMore actions
+#  RAG Agent using LangGraph, Tavily & OpenAI
 
 This project implements a modular LLM agent using LangGraph. The agent uses Tavily for retrieval (RAG) and OpenAI to generate answers based on real-time context.
 
